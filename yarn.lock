@@ -913,6 +913,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-helmet@^5.0.7":
+  version "5.0.7"
+  resolved "https://registry.yarnpkg.com/@types/react-helmet/-/react-helmet-5.0.7.tgz#1cae65b2c37fe54cf56f40cd388836d4619dbc51"
+  integrity sha512-FbDibfkcGsD/N+3k47bfLcr5uAzSi64LJ2OOILz/P5vtBwT5A92KZAU5H9/7OjhUN6au5k+BbNplhVfp6IXDcQ==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^16.7.6":
   version "16.7.6"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.7.6.tgz#80e4bab0d0731ad3ae51f320c4b08bdca5f03040"
@@ -8454,6 +8461,11 @@ normalize-url@^3.0.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.3.0.tgz#b2e1c4dc4f7c6d57743df733a4f5978d18650559"
   integrity sha512-U+JJi7duF1o+u2pynbp2zXDW2/PADgC30f0GsHZtRh+HOcXHnw137TrNlyxxRvWW5fjKd3bcLHPxofWuCjaeZg==
+
+normalize.css@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
 
 npm-bundled@^1.0.1:
   version "1.0.5"

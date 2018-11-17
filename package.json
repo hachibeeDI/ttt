@@ -5,6 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@types/react": "^16.7.6",
+    "@types/react-helmet": "^5.0.7",
     "@types/styled-components": "^4.1.0",
     "eslint": "^5.9.0",
     "gatsby": "^2.0.19",
@@ -16,6 +17,7 @@
     "gatsby-plugin-typescript": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.4",
     "gatsby-transformer-sharp": "^2.1.4",
+    "normalize.css": "^8.0.1",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
