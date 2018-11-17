@@ -16,6 +16,7 @@ const HeaderInner = styled.div`
 `;
 
 const SiteTitle = styled.h1`
+  color: var(--color-primary);
   margin: 0;
 `;
 
@@ -33,7 +34,6 @@ export default function Header({title, children}: Props) {
             to="/"
             style={{
               color: 'inherit',
-              textDecoration: 'none',
             }}
           >
             {title}

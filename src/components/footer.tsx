@@ -15,7 +15,7 @@ const FooterInner = styled.div`
   margin: auto;
 `;
 
-const SiteTitle = styled.h1`
+const SiteTitle = styled.h3`
   margin: 0;
 `;
 
@@ -33,7 +33,6 @@ export default function Footer({title, children}: Props) {
             to="/"
             style={{
               color: 'inherit',
-              textDecoration: 'none',
             }}
           >
             {title}
