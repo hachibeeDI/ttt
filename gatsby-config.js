@@ -9,9 +9,17 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/ql-fs-sources/`,
+        path: `${__dirname}/src/ql-fs-sources/images/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/ql-fs-sources/news/`,
+      },
+    },
+    'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
