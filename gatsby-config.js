@@ -3,7 +3,8 @@ module.exports = {
     title: 'ホーム｜株式会社 AI-dea',
   },
   plugins: [
-    `gatsby-plugin-typescript`,
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-source-filesystem`,
