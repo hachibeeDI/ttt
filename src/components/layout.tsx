@@ -1,9 +1,13 @@
 import 'normalize.css';
-import './layout.css';
 
 import React, {ReactNode} from 'react';
 import Helmet from 'react-helmet';
 import {StaticQuery, graphql} from 'gatsby';
+
+// Why gatsby doesn't accept it in html.js?  I totally hate bloated librally.
+import {ThemeProvider} from '../styles/themed-styled-components';
+import {GlobalStyle} from '../styles';
+import {defaultTheme} from '../styles/theme';
 
 import Header from './header';
 import Footer from './footer';
@@ -33,17 +37,23 @@ export default function Layout({children}: {children: ReactNode}) {
           <Helmet title={data.site.siteMetadata.title} meta={METADATA}>
             <html lang="ja" />
           </Helmet>
-          <Header title={data.site.siteMetadata.title} />
-          <main
-            style={{
-              margin: '0 auto',
-              maxWidth: MAX_WIDTH,
-              paddingTop: 0,
-            }}
-          >
-            {children}
-          </main>
-          <Footer title={data.site.siteMetadata.title} />
+
+          <ThemeProvider theme={defaultTheme}>
+            <>
+              <GlobalStyle />
+              <Header title={data.site.siteMetadata.title} />
+              <main
+                style={{
+                  margin: '0 auto',
+                  maxWidth: MAX_WIDTH,
+                  paddingTop: 0,
+                }}
+              >
+                {children}
+              </main>
+              <Footer title={data.site.siteMetadata.title} />
+            </>
+          </ThemeProvider>
         </>
       )}
     />
